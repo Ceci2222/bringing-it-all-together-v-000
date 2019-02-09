@@ -50,7 +50,7 @@ class Dog
     end
   end
   
-  def self.insert 
+  def insert 
     sql = <<-SQL
         INSERT INTO dogs (name, breed)
         VALUES (?, ?)
