@@ -80,7 +80,8 @@ class Dog
     if dog.empty?
       dog = self.create(hash)
     else
-      dog = self
+      dog = dog[0]
+      dog = dog.find_by_id(dog[0])
     end
     dog
   end
