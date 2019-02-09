@@ -82,7 +82,7 @@ class Dog
       object = Dog.new(dog_data[0], dog_data[1], dog_data[2])
     else
       binding.pry
-      dog = Dog.create(name: hash[0], breed: hash[1])
+      dog = Dog.create(name: hash[:name], breed: hash[:breed])
       
     end
     dog
