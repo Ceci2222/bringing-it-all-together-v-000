@@ -80,7 +80,7 @@ class Dog
     if dog.empty?
       dog = self.create(hash)
     else
-      dog.id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
+      dog.id = dog[0][0]
     end
     dog
   end
