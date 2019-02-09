@@ -32,13 +32,13 @@ class Dog
   end
   
   def self.find_by_name(name)
-    sql = "SELECT * FROM dogS WHERE name = ? LIMIT 1"
+    sql = "SELECT * FROM dogs WHERE name = ? LIMIT 1"
     result = DB[:conn].execute(sql, name)
     Dog.new(result[0], result[1], result[2])
   end
      
   def update
-    sql = "UPDATE dogs SET  name = ?, breed = ? WHERE id = ?"
+    sql = "UPDATE dogs SET name = ?, breed = ? WHERE id = ?"
     DB[:conn].execute(sql, self.name, self.breed, self.id)
   end
   
