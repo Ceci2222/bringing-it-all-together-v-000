@@ -82,7 +82,6 @@ class Dog
     else
       dog = dog[0]
     end
-    binding.pry
     dog
   end
 end
