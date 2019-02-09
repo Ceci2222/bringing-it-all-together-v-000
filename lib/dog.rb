@@ -82,9 +82,6 @@ class Dog
       dog = self.create(name, breed)
     end
     dog
-      
-    
-    
   end 
   
   def self.new
