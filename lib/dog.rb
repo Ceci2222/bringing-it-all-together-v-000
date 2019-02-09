@@ -81,9 +81,9 @@ class Dog
       dog_data = dog[0]
       dog = Dog.new(id: dog[0], name: dog[1], breed: dog[2])
     else 
-      #dog = self.create(hash)
-      dog
+      dog = self.create(hash)
     end
+    dog
   end 
   
 end
