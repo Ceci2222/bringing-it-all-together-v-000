@@ -80,7 +80,7 @@ class Dog
     if dog.empty?
       dog = self.create(hash)
     else
-      dog.@id = dog[0][0]
+      dog.@id= dog[0][0]
     end
     dog
   end
