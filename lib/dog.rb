@@ -85,5 +85,5 @@ class Dog
   end 
   
   def self.new
-      
+  end
 end
