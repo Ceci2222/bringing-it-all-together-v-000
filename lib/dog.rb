@@ -80,7 +80,7 @@ class Dog
     if dog.empty?
       dog = self.create(hash)
     else
-      dog = hash
+      dog = self
     end
     dog
   end
