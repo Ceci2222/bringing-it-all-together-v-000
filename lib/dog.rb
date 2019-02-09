@@ -81,7 +81,7 @@ class Dog
     if dog.empty?
       dog = self.create(hash)
     else
-      dog = dog[0]
+      dog = DB[:conn].execute('SELECT')
     end
     dog
   end
