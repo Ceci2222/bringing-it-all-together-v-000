@@ -80,8 +80,8 @@ class Dog
     if dog.empty?
       dog = self.create(hash)
     else
-      binding.pry
       dog.id = dog[0][0]
+      binding.pry
     end
     dog
   end
