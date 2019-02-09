@@ -81,7 +81,8 @@ class Dog
     if dog.empty?
       dog = self.create(hash)
     else
-      dog[0]
+      dog = dog[0]
     end
+    dog
   end
 end
