@@ -81,8 +81,8 @@ class Dog
       dog_data = dog[0]
       object = Dog.new(dog_data[0], dog_data[1], dog_data[2])
     else
-      dog = Dog.create(hash)
-      
+      dog = self.create(hash)
+      binding.pry
     end
     dog
   end
